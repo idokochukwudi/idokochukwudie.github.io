@@ -185,5 +185,5 @@ This project demonstrates a complete and practical walkthrough of deploying a pe
 
 More than just a personal exercise, this project is crafted to serve as a ready-made guide for any engineer or developer who wants to set up a fast, responsive, and visually engaging portfolio — without the need for complex backend infrastructure. Whether you're a new developer entering the job market or a seasoned engineer in need of a quick deployment, this project offers a streamlined approach using HTML, GitHub Actions, and GitHub Pages.
 
-It not only highlights technical competence in source control, static hosting, and DevOps practices like CI/CD via GitHub Actions, but also reflects the ability to structure and document a project in a way that others can follow and reuse.
+It not only highlights technical competence in source control, static hosting, and **DevOps practices like CI/CD via GitHub Actions**, but also reflects the ability to structure and document a project in a way that others can follow and reuse.
 
