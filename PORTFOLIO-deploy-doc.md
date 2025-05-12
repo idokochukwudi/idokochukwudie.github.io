@@ -93,3 +93,89 @@ git commit -m "Initial customization and CI/CD setup"
 git push origin main
 ```
 
+![](./img-documentation/9.git-add-git-commit.png)
+
+![](./img-documentation/10.git-push.png)
+
+### Screenshots of Successful Deployment
+
+Below are the screenshots of the successful deployment.
+
+![](./img-documentation/11.gitaction-1.png)
+
+![](./img-documentation/12.gitaction-2.png)
+
+![](./img-documentation/13.gitaction-3.png)
+
+### Step 5: Configure GitHub Pages
+
+1. Go to my GitHub repo: `idokochukwudie.github.io`
+2. Click **Settings > Pages**
+3. Under **Source**, choose:
+      - GitHub Actions
+      - Deploy from Branch: gh-pages
+      - Folder: / (`root`)
+4. Click `Save`
+
+![](./img-documentation/14.select-gh-pages.png)
+
+### Initial Access Error
+
+When I initially visited the page at https://idokochukwudie.github.io/, an error message was displayed:
+
+```
+404  
+There isn't a GitHub Pages site here.
+```
+
+This indicated that the GitHub Pages site had not yet been properly set up or deployed.
+
+![](./img-documentation/15.page-error.png)
+
+### Renaming Repository and Updating Local Remote URL
+
+**Purpose:**
+
+To ensure that my portfolio site is deployed correctly at `https://idokochukwudi.github.io`, the repository must be named **exactly** like the **GitHub username** followed by `.github.io`.
+
+**Steps Taken:**
+
+1. Renamed GitHub Repository
+
+   - Initially, the repository was named: `idokochukwudie.github.io`
+   - I renamed it via GitHub to match my correct username: `idokochukwudi.github.io`
+
+This naming ensures GitHub Pages can deploy the site at:
+
+➡️ `https://idokochukwudi.github.io`
+
+![](./img-documentation/16.site-life.png)
+
+2. Updated Local Git Remote URL
+
+After renaming the repo on GitHub, I needed to update my local repository to reflect this change.
+
+### Step-by-step:
+
+```bash
+# Navigate to your project folder
+cd idokochukwudie.github.io
+
+# Check the current remote URL
+git remote -v
+
+# Update the remote URL to the new repo name
+git remote set-url origin https://github.com/idokochwudi/idokochukwudi.github.io.git
+
+# Verify that the URL was updated
+git remote -v
+```
+![](./img-documentation/17.update-repo.png)
+
+
+### Result:
+
+My local Git repository now correctly points to the renamed remote repo, and I can push code without any issues. GitHub Pages also successfully renders the site at:
+
+📍`https://idokochukwudi.github.io/`
+
